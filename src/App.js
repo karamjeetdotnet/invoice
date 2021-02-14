@@ -1,6 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 // template: https://www.freshbooks.com/wp-content/uploads/2018/12/invoice-service-2-1.jpg
+var a = ['','one ','two ','three ','four ', 'five ','six ','seven ','eight ','nine ','ten ','eleven ','twelve ','thirteen ','fourteen ','fifteen ','sixteen ','seventeen ','eighteen ','nineteen '];
+var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+
+// function inWords (num) {
+//     if ((num = num.toString()).length > 9) return 'overflow';
+//     n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+//     if (!n) return; var str = '';
+//     str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+//     str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+//     str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+//     str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+//     str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'only ' : '';
+//     return str;
+// }
 function App() {
   return (
     <div className="container">
@@ -15,11 +29,16 @@ function App() {
         </div>
       </div>
       <div className="row">
-        <span className="text-uppercase">Grafix World</span><span className="text-capitalize">one solution for all your printing needs</span>
+<div className="col-sm-4">
+<h1 className="text-uppercase">Grafix World</h1>
+</div>
+<div className="col-sm-8">
+<h3 className="text-capitalize full-justify" style={{paddingTop: "15px"}}>one solution for all your printing needs</h3>
+</div>  
       </div>
       <div className="row">
         <div className="col-sm-9">
-        <table class="table">
+        <table className="table mb-5">
   <thead>
     <tr>
       <th scope="col">Description</th>
@@ -43,6 +62,42 @@ function App() {
     </tr>
   </tbody>
 </table>
+<div className="row">
+  <div className="col-sm-6">
+
+  </div>
+  <div className="col-sm-6">
+  <table className="table">
+<tbody>
+  <tr>
+    <td style={{width: "60%"}}>Subtotal</td>
+    <td style={{width: "40%"}}>2,000.00</td>
+  </tr>
+  <tr>
+    <td>Tax</td>
+    <td>0.00</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td>2,000.00</td>
+  </tr>
+  <tr>
+    <td>Amount Paid</td>
+    <td>0.00</td>
+  </tr>
+  <tr>
+    <td><strong>Amount Due</strong></td>
+    <td>2,000.00 INR</td>
+  </tr>
+</tbody>
+</table>
+  </div>
+</div>
+<div>
+  <div style={{bottom: 0, position: "absolute"}}>
+Make all the payments in favour of BHAGWANT SINGH
+  </div>
+</div>
           </div>
           <div className="col-sm-3">
           <div className="card mt-2">
